@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        form {
+            border: 2px solid darkgrey;
+            padding: 20px;
+            width: 300px;
+            margin: 0 auto;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Registration Form</h2>
+
+    <form action="#" method="post">
+        Full Name:
+        <input type="text" id="name" name="name" required><br>
+
+        Email Address:
+        <input type="email" name="email" required><br>
+
+        Password:
+        <input type="password" id="password" name="password" required><br>
+
+        Phone Number:
+        <input type="tel" id="Phone" name="Phone" required><br>
+
+        Gender:
+        <select id="Gender" name="Gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
